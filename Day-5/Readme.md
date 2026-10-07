@@ -1,16 +1,16 @@
-# 🐳 Docker Custom Images & GitHub Container Registry
+# 🐳 Docker Custom Images, GHCR & Jenkins Integration
 
-Hands-on practice with building custom Docker images and pushing them to **GitHub Container Registry (GHCR)**.
+Hands-on practice with **Docker custom images, GitHub Container Registry (GHCR), and Jenkins CI/CD integration with Git and Docker**.
 
 ## 📌 Topics Covered
 
 - Creating and working with a `Dockerfile`
 - Building custom Docker images
 - Docker image tagging
-- Logging in to GitHub Container Registry
-- Tagging images for GHCR
-- Pushing images to GHCR
-- Troubleshooting Docker image naming
+- Pushing images to GitHub Container Registry
+- Git & Jenkins integration
+- Jenkins & Docker integration
+- Automating Docker image builds using Jenkins
 
 ## 🛠️ Commands Practiced
 
@@ -31,31 +31,33 @@ docker tag jenkinstest:latest ghcr.io/haripriya2304/jenkinstest:latest
 docker push ghcr.io/haripriya2304/jenkinstest:latest
 ```
 
-## 🔄 Workflow
+## 🔄 Jenkins CI/CD Workflow
 
 ```text
-Dockerfile
-    ↓
-docker build
-    ↓
-Docker Image
-    ↓
-docker login
-    ↓
-docker tag
-    ↓
-docker push
-    ↓
+Git Repository
+      ↓
+   Jenkins
+      ↓
+  Pull Source Code
+      ↓
+   Docker Build
+      ↓
+ Docker Image
+      ↓
+   Docker Push
+      ↓
 GitHub Container Registry
 ```
 
 ## 🎯 Key Learnings
 
-- Built custom Docker images using a `Dockerfile`
-- Learned Docker image names and tags
-- Authenticated with GHCR
-- Tagged and pushed images to GHCR
-- Learned to troubleshoot `No such image` errors
+- Built custom Docker images using Dockerfile
+- Learned Docker image tagging and pushing
+- Worked with GitHub Container Registry
+- Integrated **Git with Jenkins**
+- Integrated **Jenkins with Docker**
+- Automated Docker image building through Jenkins
+- Understood the basics of a CI/CD pipeline
 
 ## 👩‍💻 Author
 
